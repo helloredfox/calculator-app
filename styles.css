@@ -30,11 +30,56 @@
         /* Text */
         --theme2-dark-yellow-text: hsl(60, 10%, 19%);
 
+    /* Theme 3 */
+        /* Backgrounds */
+        --theme3-main-background:   hsl(281, 89%, 26%);
+        --theme3-toggle-background: hsl(268, 71%, 12%);
+        --theme2-screen-background: hsl(268, 71%, 12%);
+        /* Keys */
+        --theme3-key-background: hsl(281, 89%, 26%);
+        --theme3-key-shadow: hsl(285, 91%, 52%);
+        --theme3-cyan-key-background:  hsl(176, 100%, 44%);
+        --theme3-cyan-key-shadow: hsl(177, 92%, 70%);
+        --theme3-violet-key-background: hsl(268, 47%, 21%);
+        --theme3-magenta-key-shadow:  hsl(290, 70%, 36%);
+        /* Text */
+        --theme3-light-yellow-text: hsl(52, 100%, 62%);
+        --theme3-dark-blue-text:  hsl(198, 20%, 13%);
+    }
 
+    * {
+        /* border: 2px solid yellow; */
     }
     
-    
-    
+    html {
+        font-family: 'League Spartan';
+    }
+
+    body {
+        background-color: var(--theme1-main-background);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .title {
+        color: var(--white-text);
+    }
+    .theme-selector {
+        display: flex;
+        list-style-type: none;
+    }
+    .calculator {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 800px;
+    }
     
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
