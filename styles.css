@@ -62,24 +62,43 @@
         justify-content: center;
         align-items: center;
     }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-    }
-    .title {
-        color: var(--white-text);
-    }
-    .theme-selector {
-        display: flex;
-        list-style-type: none;
-    }
     .calculator {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         width: 800px;
     }
-    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 2rem;
+    }
+    .inputs label {
+        margin: 5px;
+    }
+    input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+    }
+    .title {
+        color: var(--white-text);
+        font-size: 1.5rem;
+    }
+    .theme-selector {
+        display: flex;
+        align-items: flex-end;
+    }
+    .theme-label {
+        color: var(--white-text);
+        margin-right: 1.5rem;
+        font-size: .8rem;
+    }
+    .theme-selector-toggle {
+        width: 100%;
+        height: 20px;
+        border-radius: 20px;
+        background-color: var(--theme1-toggle-background);
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
